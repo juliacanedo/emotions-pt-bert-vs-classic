@@ -135,7 +135,7 @@ python scripts/run_classic.py     --cfg configs/base.yaml configs/data.yaml conf
 ## Otimização SCut / Fβ
 
 ```bash
-python scripts/run_retune_scut.py
+./scripts/run_retune_scut.ps1
 ```
 
 ---
