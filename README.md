@@ -46,6 +46,9 @@ Comparar abordagens clássicas vs deep learning no dataset **GoEmotions-PT (28 e
 │   └── models/
 ├── notebooks/ # Análise do projeto + Interpretabilidade + script para gerar imagens
 ├── scripts/
+├── src/
+│    ├── features/
+│    └── utils/
 ├── run_pipeline.ps1
 ├── run_pipeline.sh
 ├── requirements_base.txt # Bibliotecas base
