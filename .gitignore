@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.env
+.env.*
+.ipynb_checkpoints/
+.DS_Store
+
+# Data & outputs
+data/processed/
+data/external/
+data/cache
+outputs/
+reports/
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+!outputs/.gitkeep
+cache_tokenized/
+
+# VSCode
+.vscode/
