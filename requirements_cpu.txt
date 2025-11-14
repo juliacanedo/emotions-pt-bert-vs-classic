@@ -1,0 +1,7 @@
+# Base requirements
+-r requirements_base.txt
+
+# PyTorch (CPU-only)
+torch==2.5.1
+torchaudio==2.5.1
+torchvision==0.20.1

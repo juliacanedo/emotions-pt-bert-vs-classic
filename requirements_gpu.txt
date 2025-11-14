@@ -1,0 +1,8 @@
+# Base requirements
+-r requirements_base.txt
+
+# Usar o índice oficial da PyTorch com CUDA 12.1
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# PyTorch GPU (cu121)
+torch==2.5.1
