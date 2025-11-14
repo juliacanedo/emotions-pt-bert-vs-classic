@@ -1,0 +1,13 @@
+dataset:
+  use_fixed_splits: true
+  # use os CSVs gerados pelo preprocess.py
+
+  train_file: "data/processed/train_trunc128.csv"
+  val_file:   "data/processed/val_trunc128.csv"
+  test_file:  "data/processed/test_trunc128.csv"
+  classes_file: "data/processed/selected_emotions.txt"
+  text_col: "texto"
+  labels_col: "labels"
+  label_sep: ";"
+  lowercase: true
+  remove_urls: true

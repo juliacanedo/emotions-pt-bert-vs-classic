@@ -1,0 +1,27 @@
+tfidf:
+  word:
+    ngram_range: [1, 3]      
+    min_df: 1
+    max_df: 0.9
+    max_features: 200000   
+  char:
+    ngram_range: [3, 6]
+    min_df: 2
+    max_df: 0.95
+    analyzer: "char_wb"
+    max_features: 200000
+
+model:
+  kind: "logreg"
+  class_weight: "balanced"   # ajuda nas raras (aproxima CB-Loss do BERT)
+  logreg_solver: "liblinear"
+  logreg_max_iter: 2000
+
+# calibração desligada para o baseline
+calibration:
+  enabled: false
+  method: "sigmoid"          # "sigmoid" | "isotonic"
+  cv: 3
+
+output_tag: "classic_tfidf"
+cache_path: "data/cache/classic_tfidf_logreg_ovr.joblib"

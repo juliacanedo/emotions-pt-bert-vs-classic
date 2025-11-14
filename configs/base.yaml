@@ -1,0 +1,21 @@
+seed: 42
+device: "cpu"          # troque para "cuda" se tiver GPU
+num_workers: 4
+track_vram: false
+
+metrics:
+  - f1_micro
+  - f1_macro
+  - map
+  - ece
+save_curves: true
+report_top_k_classes: 3
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  external: "data/external"
+  outputs_models: "outputs/models"
+  outputs_metrics: "outputs/metrics"
+  outputs_curves: "outputs/curves"
+  outputs_reports: "outputs/reports"

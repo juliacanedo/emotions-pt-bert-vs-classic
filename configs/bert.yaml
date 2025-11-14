@@ -1,0 +1,22 @@
+model_name: neuralmind/bert-base-portuguese-cased
+freeze_encoder: false
+unfreeze_last_n: 0
+gradient_checkpointing: false
+temperature_scaling: false
+
+max_length: 128          
+batch_size: 24          
+grad_accum: 1
+num_epochs: 5           
+lr: 2.0e-5           
+weight_decay: 0.01
+fp16: false             
+warmup_ratio: 0.1       
+eval_steps: 0
+save_strategy: "epoch"
+output_tag: "bert_base_cb_loss"
+
+cb_beta: 0.999
+lr_scheduler_type: "linear"
+dataloader_num_workers: 4
+pin_memory: true
